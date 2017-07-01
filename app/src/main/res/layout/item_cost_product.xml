@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvdate"
+            android:textSize="@dimen/txtsize16"
+            android:text="YYYY-mm-dd"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvquality"
+            android:textSize="@dimen/txtsize16"
+            android:text="100 ชิ้น"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvcost"
+            android:textSize="@dimen/txtsize16"
+            android:text="50 บาท"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

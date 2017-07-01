@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/appbar">
+    <RelativeLayout
+        android:id="@+id/empty_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/pack"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imgproduct"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/press_add_product"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/txtsize"
+            android:layout_below="@id/imgproduct"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

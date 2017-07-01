@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.market.application">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddProductActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CartActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CashierActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ManageTypeActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SumActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.StockActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.PassCodeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.HistoryDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AddStockActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.DetailProductActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ProductActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ProductStockActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.DetailSummarySaleActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.EditProductActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

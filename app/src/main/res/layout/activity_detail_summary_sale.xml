@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_summary_sale"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.market.application.activity.DetailSummarySaleActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:visibility="visible"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/formproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_product"
+                android:textSize="@dimen/txtsize16" />
+
+            <TextView
+                android:id="@+id/tvprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:hint="@string/prictunit"
+                android:textSize="@dimen/txtsize16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/imgproduct"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/formproduct"
+        android:background="@color/orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/value"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cost"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listproduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/priceform"
+        android:layout_below="@id/head" />
+
+    <LinearLayout
+        android:id="@+id/priceform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/formsums"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/totalproduct"
+                android:textSize="@dimen/txtsize" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:inputType="numberDecimal|numberSigned"
+                android:text="0"
+                android:textSize="@dimen/txtsize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:text="@string/bath"
+                android:textSize="@dimen/txtsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/formcost"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/sumcost"
+                android:textSize="@dimen/txtsize" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textSize="@dimen/txtsize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:text="@string/bath"
+                android:textSize="@dimen/txtsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/formtotal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/profit"
+                android:textSize="@dimen/txtsize" />
+
+            <TextView
+                android:id="@+id/profit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="0"
+                android:textSize="@dimen/txtsize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:text="@string/bath"
+                android:textSize="@dimen/txtsize" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="@dimen/cardsize"
+        android:layout_height="@dimen/heightproduct"
+        android:layout_margin="8dp"
+        android:elevation="3dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/imageproduct"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="@dimen/sizenameproduct"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageproduct"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="nameproduct"
+                android:textSize="@dimen/txtsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:id="@+id/layoutprice"
+                android:layout_marginTop="@dimen/margin5">
+
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="@dimen/sizeprice"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="000000.00"
+                    android:textSize="@dimen/txt14" />
+
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutprice"
+                android:layout_centerHorizontal="true"
+                android:text="@string/addtocart"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:background="@color/orange"
+                android:layout_marginTop="@dimen/margin5"
+                android:id="@+id/btnaddCart"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/outstock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#96000000">
+
+            <TextView
+                android:layout_width="@dimen/sizeprice"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/outofstock"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sizeout"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

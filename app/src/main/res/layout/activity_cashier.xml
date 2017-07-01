@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.market.application.activity.CashierActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:visibility="visible"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvtitle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize"
+            android:textStyle="bold"
+            android:text="@string/cashieractivity"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:id="@+id/listproduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/priceform" />
+
+        <RelativeLayout
+            android:id="@+id/priceform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/formsums"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/totalproduct"
+                    android:textSize="@dimen/txtsize" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:text="0"
+                    android:textSize="@dimen/txtsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/bath"
+                    android:textSize="@dimen/txtsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formdiscount"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/formsums"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/discount"
+                    android:textSize="@dimen/txtsize" />
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="@dimen/txtsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/bath"
+                    android:textSize="@dimen/txtsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/formtotal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/formdiscount"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/totalprice"
+                    android:textSize="@dimen/txtsize" />
+
+                <EditText
+                    android:id="@+id/edtsum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4"
+                    android:textSize="@dimen/txtsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/bath"
+                    android:textSize="@dimen/txtsize" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnfinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/formtotal"
+                android:text="@string/finish"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize"
+                android:background="@color/orange"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/transparent"
+            android:id="@+id/imgproduct"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="ชื่อสินค้า"
+                android:textSize="@dimen/txtsize"
+                android:gravity="right"
+                android:id="@+id/nameproduct"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="@string/value"
+                    android:textSize="@dimen/txtsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="0"
+                    android:textSize="@dimen/txtsize"
+                    android:id="@+id/value"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="0"
+            android:textSize="@dimen/txtsize"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:id="@+id/totalunit"/>
+    </LinearLayout>
+</RelativeLayout>

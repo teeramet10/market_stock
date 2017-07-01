@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CartActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:visibility="visible"
+        app:contentInsetStart="0dp"
+
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cartactivity"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ListView
+        android:id="@+id/lvcart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_below="@id/toolbar"
+        android:layout_above="@+id/btnsale"/>
+
+    <Button
+        android:id="@+id/btnsale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="@string/sale"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtsize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

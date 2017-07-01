@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.market.application.activity.ManageTypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:visibility="visible"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <ImageButton
+                android:id="@+id/btnback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/managecatalogue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+
+        <GridView
+            android:id="@+id/listtype"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="120dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add"
+        android:id="@+id/fabadd"/>
+
+</android.support.design.widget.CoordinatorLayout>

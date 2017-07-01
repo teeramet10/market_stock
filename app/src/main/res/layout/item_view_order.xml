@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/rectangle">
+
+        <TextView
+            android:id="@+id/orderdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textSize="@dimen/txtsize16" />
+
+        <TextView
+            android:id="@+id/orderid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="ID"
+            android:textSize="@dimen/txtsize16"
+            android:layout_marginLeft="@dimen/margin8"
+            android:layout_marginRight="@dimen/margin8"/>
+
+
+        <TextView
+            android:id="@+id/ordertotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Total"
+            android:textSize="@dimen/txtsize16"
+            android:layout_marginRight="@dimen/margin8"
+            android:gravity="right|end"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/unit"
+            android:textSize="@dimen/txtsize16" />
+
+    </LinearLayout>
+
+</LinearLayout>

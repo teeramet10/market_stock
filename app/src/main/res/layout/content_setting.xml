@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.market.application.activity.SettingActivity"
+    tools:showIn="@layout/activity_setting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/orange"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="@string/passcode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usepasscode"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="@string/openuse"
+            android:textSize="@dimen/txtsize" />
+
+        <Switch
+            android:id="@+id/switchpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:gravity="right|end" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/changepasscode"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="@string/changepass"
+            android:textSize="@dimen/txtsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/orange"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:text="@string/product"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/valueproduct"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:text="@string/minvalueproduct"
+            android:textSize="@dimen/txtsize" />
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/ten"
+            android:textSize="@dimen/txtsize" />
+    </LinearLayout>
+</LinearLayout>

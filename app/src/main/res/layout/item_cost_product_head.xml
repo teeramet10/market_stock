@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/orange"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvdate"
+            android:textSize="@dimen/txtsize16"
+            android:text="@string/datefirstin"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvquality"
+            android:textSize="@dimen/txtsize16"
+            android:text="@string/value"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvcost"
+            android:textSize="@dimen/txtsize16"
+            android:text="@string/cost"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+</LinearLayout>

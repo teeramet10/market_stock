@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.market.application.activity.SumActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:visibility="visible"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btnback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/tvtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summarysale"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/btnback"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/btncalendar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/calendar"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@id/toolbar"
+            android:background="@color/colorPrimary"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="@color/white"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/sumpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar" />
+
+
+</RelativeLayout>

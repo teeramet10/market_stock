@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">Market Store</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu">เมนู</string>
+    <string name="cart">ตะกร้าสินค้า</string>
+    <string name="Dasboard">สรุปยอดขาย</string>
+    <string name="stock">คลังสินค้า</string>
+    <string name="setting">ตั้งค่า</string>
+    <string name="search">ค้นหา</string>
+    <string name="manage_cat">จัดการแคตตาล็อก</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_product">AddProductActivity</string>
+    <string name="price">ราคา</string>
+    <string name="name_product">ชื่อสินค้า</string>
+    <string name="sale">ขายสินค้า</string>
+    <string name="totalproduct">รวมราคาสินค้าทั้งหมด</string>
+    <string name="bath">บาท</string>
+    <string name="discount">ส่วนลด</string>
+    <string name="totalprice">ราคาสุทธิ</string>
+    <string name="profit">กำไรสุทธิ</string>
+
+
+    <string name="empty_cart">ไม่มีสินค้าในตะกร้า</string>
+    <string name="press_add_product">กรุณาเพิ่มสินค้า</string>
+    <string name="del_product">คุณต้องการลบสินค้าชิ้นนี้ไหม?</string>
+    <string name="del_order">คุณต้องการยกเลิกออเดอร์นี้ไหม</string>
+
+    <string name="ok">ตกลง</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="finish">เสร็จสิ้น</string>
+    <string name="bin">ถังขยะ</string>
+    <string name="value">จำนวน</string>
+    <string name="delete">ลบ</string>
+    <string name="enter">ตกลง</string>
+    <string name="passcode">รหัสผ่าน</string>
+    <string name="openuse">เปิดใช้งาน</string>
+    <string name="changepass">เปลี่ยนรหัสผ่าน</string>
+    <string name="back">ย้อนกลับ</string>
+    <string name="setpasscode">ตั้งรหัสผ่าน</string>
+
+    <string name="usepass">ตั้งรหัสผ่าน</string>
+    <string name="keypass">กรอกรหัสผ่าน</string>
+    <string name="confirmpass">ยืนยันรหัสผ่าน</string>
+    <string name="changenewpass">ตั้งรหัสผ่านใหม่</string>
+
+    <string name="notusepass">ยังไม่ได้ตั้งรหัสผ่าน</string>
+    <string name="unit">฿</string>
+    <string name="outofstock">ไม่มีสินค้า</string>
+    <string name="addtocart">หยิบใส่ตะกร้า</string>
+    <string name="history">ประวัติการขาย</string>
+    <string name="valueunit">จำนวน</string>
+
+    <string name="addproduct">เพิ่มสินค้าชิ้นนี้</string>
+    <string name="seedetail">ดูข้อมูล</string>
+    <string name="name">ชื่อ</string>
+    <string name="cost">ราคาต้นทุน</string>
+    <string name="pricesale">ราคาขาย</string>
+    <string name="datefirstin">วันที่ลงสินค้า</string>
+    <string name="type">ประเภทสินค้า</string>
+    <string name="date">วันที่</string>
+    <string name="addproductactivity">เพิ่มสินค้า</string>
+    <string name="managecatalogue">จัดการแคทตาล็อก</string>
+    <string name="cartactivity">ตะกร้าสินค้า</string>
+    <string name="cashieractivity">ขายสินค้า</string>
+    <string name="historyactivity">ประวัติการขาย</string>
+    <string name="stockactivity">คลังสินค้า</string>
+    <string name="summarysale">สรุปยอดขาย</string>
+
+    <string name="jan">มกรา</string>
+    <string name="feb">กุมภา</string>
+    <string name="march">มีนา</string>
+    <string name="april">เมษา</string>
+    <string name="may">พฤษภา</string>
+    <string name="june">มิถุนา</string>
+    <string name="july">กรกฎา</string>
+    <string name="aug">สิงหา</string>
+    <string name="sep">กันยา</string>
+    <string name="oct">ตุลา</string>
+    <string name="nov">พฤศจิกา</string>
+    <string name="dec">ธันวา</string>
+
+    <string name="profits">กำไร</string>
+    <string name="productnenough">สินค้าไม่พอ</string>
+
+
+    <string name="product">สินค้า</string>
+    <string name="minvalueproduct">จำนวนสินค้าขั้นต่ำ</string>
+    <string name="ten">10</string>
+    <string name="typename">ชื่อประเภทสินค้า</string>
+    <string name="minvalue">จำนวนสินค้าขั้นต่ำ</string>
+
+    <string name="sortname">เรียงตามชื่อ</string>
+    <string name="sortprice">เรียงตามราคา</string>
+    <string name="sortdate">เรียงตามวันที่</string>
+    <string name="sortqual">เรียงตามจำนวน</string>
+
+    <string name="allproduct">สินค้าทั้งหมด</string>
+    <string name="lowinstock">สินค้าใกล้หมด</string>
+
+    <string name="sales">ยอดขาย</string>
+
+    <string name="failed">ไม่สามารถเพิ่มสินค้าได้</string>
+    <string name="fillinform">กรุณากรอกข้อมูลให้ครบ</string>
+    <string name="repeatname">ชื่อสินค้าซ้ำ</string>
+    <string name="noteditor">ไม่สามารถแก้ไขได้</string>
+    <string name="failedtype">ไม่สามารถเพิ่มประเภทสินค้าได้</string>
+    <string name="failedeltype">ไม่สามารถลบประเภทสินค้าได้</string>
+    <string name="wantdeltype">ต้องการลบประเภทสินค้านี้ไหม</string>
+    <string name="notdel">ไม่สามารถลบได้</string>
+    <string name="wrongpass">รหัสผ่านไม่ถูกต้อง</string>
+    <string name="notaddcart">ไม่สามารถเพิ่มสินค้าเข้าตะกร้าได้</string>
+    <string name="wantdelpass">ต้องการยกเลิกการตั้งรหัสผ่านหรือไม่</string>
+    <string name="repeattype">ชื่อประเภทสินค้าซ้ำ</string>
+    <string name="notlowstock">ไม่มีสินค้าเหลือน้อย</string>
+    <string name="pressbuttontype">กดปุ่มเพื่อเพิ่มประเภทสินค้า</string>
+
+    <string name="waiting">กรุณารอสักครู่</string>
+    <string name="allsale">รวมยอดขาย</string>
+    <string name="editdata">แก้ไขข้อมูล</string>
+    <string name="addproductt">เพิ่มสินค้า</string>
+    <string name="sumcost">รวมต้นทุน</string>
+    <string name="prictunit">ราคาขายต่อชิ้น</string>
+
+    <string name="productunit">บาท/ชิ้น</string>
+    <string name="badsale">สินค้าขายไม่ดี</string>
+    <string name="sumprice">สรุปยอดขาย</string>
+    <string name="graph">กราฟ</string>
+    <string name="cost1">ต้นทุน</string>
+</resources>

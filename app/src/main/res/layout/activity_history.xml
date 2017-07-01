@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.market.application.activity.HistoryActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:visibility="visible"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/historyactivity"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/btnback"
+            android:gravity="center_vertical"/>
+
+        <ImageButton
+            android:id="@+id/btncalendar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calendar"
+            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ListView
+        android:id="@+id/historyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar" />
+</RelativeLayout>

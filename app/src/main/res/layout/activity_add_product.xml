@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddProductActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_save" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:visibility="visible"
+            app:contentInsetStart="0dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageButton
+                android:id="@+id/btnback"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:onClick="onClick"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addproductt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txtsize"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightform"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/name_product"
+                    android:textSize="@dimen/txtsize" />
+
+                <EditText
+                    android:id="@+id/edtname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/name_product"
+                    android:maxLength="100"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightform"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnertype"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heightform" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightform"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/cost"
+                    android:textSize="@dimen/txtsize" />
+
+                <EditText
+                    android:id="@+id/edtcost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/cost"
+                    android:maxLength="7"
+                    android:inputType="numberDecimal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightform"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/pricesale"
+                    android:textSize="@dimen/txtsize" />
+
+                <EditText
+                    android:id="@+id/edtprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/pricesale"
+                    android:inputType="numberDecimal"
+                    android:maxLength="7" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightform"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/value"
+                    android:textSize="@dimen/txtsize" />
+
+                <EditText
+                    android:id="@+id/edtquality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/value"
+                    android:maxLength="4"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightform"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/date"
+                    android:textSize="@dimen/txtsize" />
+
+                <Button
+                    android:id="@+id/edtdate"
+                    style="@style/EditButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="false"
+                    android:hint="@string/datefirstin"
+                    android:inputType="numberDecimal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/addpic"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/image"
+                    android:text="Picture" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
