@@ -17,7 +17,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public static final String DISABLE_NAME = "disable_name";
 
     private static final String CREATE_TABLE_DISABLE = "CREATE TABLE " + DISABLE_TB + "("
-            + DISABLE_ID + " INTEGER(1) PRIMARY KEY AUTOINCREMENT,"
+            + DISABLE_ID + " INTEGER(1) PRIMARY KEY  ,"
             + DISABLE_NAME + " VARCHAR(10) NOT NULL);";
 
     public static final String TYPE_TB = "type_tb";
@@ -26,7 +26,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public static final String ID_DISABLE = "id_disable";
 
     private static final String CREATE_TABLE_TYPE = "CREATE TABLE " + TYPE_TB + "("
-            + TYPE_ID + " INTEGER(4) PRIMARY KEY AUTOINCREMENT,"
+            + TYPE_ID + " INTEGER PRIMARY KEY   AUTOINCREMENT ,"
             + TYPE_NAME + " VARCHAR(40) NOT NULL,"
             + ID_DISABLE + " INTEGER(1) NOT NULL,"
             +" FOREIGN KEY ("+ID_DISABLE+") REFERENCES "+DISABLE_TB+"("+DISABLE_ID+")"
@@ -37,7 +37,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public static final String STATUS_NAME = "status_name";
 
     private static final String CREATE_TABLE_STATUS = "CREATE TABLE " + STATUS_TB + "("
-            + STATUS_ID + " INTEGER(1) PRIMARY KEY AUTOINCREMENT,"
+            + STATUS_ID + " INTEGER(1) PRIMARY KEY ,"
             + STATUS_NAME + " VARCHAR(15) NOT NULL);";
 
 
@@ -49,7 +49,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
     public static final String ID_STATUS = "id_status";
 
     private static final String CREATE_TABLE_ORDER = "CREATE TABLE " + ORDER_TB + "("
-            + ORDER_ID + " INTEGER(4) PRIMARY KEY AUTOINCREMENT,"
+            + ORDER_ID + " INTEGER PRIMARY KEY   AUTOINCREMENT ,"
             + ORDER_DATE + " LONG(13) NOT NULL,"
             + ORDER_DISCOUNT + " DOUBLE(4,2),"
             + ORDER_TOTAL + " DOUBLE(5,2),"
@@ -66,7 +66,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
 
     private static final String CREATE_TABLE_PRODUCT = "CREATE TABLE " + PRODUCT_TB + "("
-            + PRODUCT_ID + " INTEGER(4) PRIMARY KEY AUTOINCREMENT,"
+            + PRODUCT_ID + " INTEGER PRIMARY KEY   AUTOINCREMENT ,"
             + PRODUCT_NAME + " VARCHAR(40) NOT NULL,"
             + PRODUCT_PICTURE + " TEXT,"
             + ID_DISABLE + " INTEGER(1) NOT NULL,"
@@ -85,7 +85,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
 
     private static final String CREATE_TABLE_STOCK = "CREATE TABLE " + STOCK_TB + "("
-            + STOCK_ID + " INTEGER(4) PRIMARY KEY AUTOINCREMENT,"
+            + STOCK_ID + " INTEGER PRIMARY KEY   AUTOINCREMENT ,"
             + ID_PRODUCT + " INTEGER(4) NOT NULL,"
             + PRODUCT_COST + " DOUBLE(4,2) NOT NULL,"
             + PRODUCT_PRICE + " DOUBLE(4,2) NOT NULL,"
@@ -105,7 +105,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
 
     private static final String CREATE_TABLE_DETAIL_CART = "CREATE TABLE " + DETAIL_CART_TB + "("
-            + DETAIL_CART_ID + " INTEGER(4) PRIMARY KEY AUTOINCREMENT,"
+            + DETAIL_CART_ID + " INTEGER PRIMARY KEY   AUTOINCREMENT ,"
             + ID_PRODUCT_STOCK + " INTEGER(4) NOT NULL,"
             + DETAIL_CART_QUALITY + " INTEGER(4) NOT NULL,"
             + DETAIL_CART_PRICE + " DOUBLE(4,2) NOT NULL,"
@@ -121,7 +121,7 @@ public class SqliteHelper extends SQLiteOpenHelper {
 
 
     private static final String CREATE_TABLE_CART = "CREATE TABLE " + CART_TB + "("
-            + CART_ID + " INTEGER(4) PRIMARY KEY AUTOINCREMENT,"
+            + CART_ID + " INTEGER PRIMARY KEY   AUTOINCREMENT ,"
             + ID_ORDER_F + " INTEGER(4) NOT NULL,"
             + ID_CART_DETAIL + " INTEGER(4) NOT NULL,"
             +" FOREIGN KEY ("+ID_ORDER_F+") REFERENCES "+ORDER_TB+"("+ORDER_ID+"),"
